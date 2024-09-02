@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Ropa+Sans:ital@0;1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    min-height: 95vh;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+
+/* Navbar */
+.navbar{
+    background-image: linear-gradient(to right, #1a2d64, #455da3);
+    color: #fff;
+    --bs-navbar-padding-y: 0 !important;
+    font-family: "Ropa Sans", sans-serif;
+    letter-spacing: 1px;
+}
+.navbar .navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+#adminNavbar .nav-item{
+    padding: 10px 5px;
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#adminNavbar .nav-item .nav-link{
+    color: #fff;
+}
+#adminNavbar .nav-item:hover .nav-link,
+#adminNavbar .nav-item .nav-link.active{
+    color: #61e7fb;
+    transition: ease-in-out .5s;
+}
+
+/* Footer */
+.footer-section{
+    background-image: linear-gradient(to left, #1a2d64, #455da3);
+    color: #fff;
+    --bs-navbar-padding-y: 0 !important;
+    font-family: "Ropa Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Table */
+.table tr:first-child
+{
+    --bs-table-bg: #6f6883;
+    color: #fff;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #c1d7ee;
+}
+.table-striped>tbody>tr:nth-of-type(even)>* {
+    --bs-table-accent-bg: #dfecfa;
+}
+.table th,
+.table td{
+    border: 3px solid #fff;
+}
+.button{
+    background-color: #4976B1;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 7px;
+    max-width: 150px;
+    text-align: center;
+}
+.button:hover{
+    background-color: #29496f;
+    color: #a9d1ff;
+    transition: ease-out .5s;
+}
+.create-button{
+    background-color: #5e8bbf;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #537fb1;
+    margin-bottom: 20px;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    text-align: center;
+}
+.create-button:hover{
+    background-color: #506ca7;
+    color: #c4e0ff;
+    transition: ease-out .5s;
+}
+/* form */
+.form-group .form-control,
+.form-group .form-select{
+    background-color: #dfecfa;
+    border: .5px solid #474747cc;
+}
+.form-group .form-control.active,
+.form-group .form-control:focus,
+.form-group .form-select.active,
+.form-group .form-select:focus{
+    box-shadow: none;
+}
+input[type=submit]{
+    background-color: #4976B1;
+    padding: 7px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #39539e;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+input[type=submit]:hover{
+    background-color: #285590;
+    color: #fff;
+    transition: ease-out .5s;
+}
+.form-group .checkbox input[type="checkbox"] {
+    appearance: none;
+    padding: 6px;
+    border: 1px solid #636363;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-group .checkbox input[type="checkbox"][disabled] {
+    border: 1px solid #cccccc;
+}
+.form-group #allPermission{
+    border-radius: 10px;
+}
+.form-group .checkbox input[type="checkbox"]:checked{
+    background-color: #6f6883;
+  }
+  
+
+
+/* Details */
+.details-section{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: left;
+}
+.details-section span{
+    display: block;
+    margin: 20px 0px;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+}
+.details-section .col-xl-5 span{
+    font-weight: bold;
+}
+.details-section img{
+    width: 250px;
+    height: fit-content;
+    border: 3px solid #fff;
+    box-shadow: 2px 2px 10px #555;
+    margin-bottom: 20px;
+}
+
+.back-btn{
+    display: block;
+    text-align: right;
+    color: #111;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all .5s;
+}
+.back-btn:hover{
+    color: #555;
+}
+
+/* Alert */
+.alert-section
+{
+    padding-top: 25px;
+}
+.alert{
+    max-width: 50%;
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px 50px !important;
+    padding-left: 25px !important;
+}
+.alert-dismissible .btn-close{
+    padding-right: 25px !important;
+}
+
+/* data table */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 10px;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+#myTable_filter input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+#myTable_filter input:focus {
+    outline: none;
+}
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting:before{
+    color: #cfcfcf;
+    opacity: 1;
+    font-size: 15px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+{
+    background: #768699;
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_length select
+{
+    background: #768699;
+    color: #fff !important;
+}
+
+.card{
+    text-align: center;
+    margin: 15px 5px;
+}
+.card{
+    --bs-card-spacer-x: .5rem
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Media Query */
+@media only screen and (max-width: 991px)
+{
+    table{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    table.dataTable tbody th,
+    table.dataTable tbody td{
+        padding: 5px;
+    }
+    .button{
+        padding: 3px 7px;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    .navbar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar-toggler:focus
+    {
+        box-shadow: none;
+    }
+    .navbar .navbar-brand{
+        font-size: 25px;
+    }
+    .navbar-toggler
+    {
+        padding: 2px 7px;
+        border: 1px solid #a4a4a4c9;
+    }
+    .navbar-collapse
+    {
+        text-align: center;
+    }
+    #adminNavbar .nav-item
+    {
+        border-bottom: 1px solid #86868694;
+    }
+    #adminNavbar .nav-item:last-child
+    {
+        border-bottom: none;
+    }
+    .create-button{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 13px;
+        width: 75px;
+    }
+}

@@ -1,0 +1,42 @@
+
+.main-content{
+    padding-top: 30px;
+    min-height: 90vh;
+    background-image: linear-gradient(to top, #ffffff, #bae0ff);
+}
+.profile-section{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.data-column
+{
+    width: 95%;
+    margin: 5px auto;
+    padding: 9px 10px;
+    background: #2a3f80c7;
+    color: #fff;
+    box-shadow: 5px 5px 10px #4d66b1;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 991px) {
+    .main-content{
+        min-height: 85vh;
+    }
+    .profile-section {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .profile-section {
+        width: 100%;
+    }
+}
+
+
+

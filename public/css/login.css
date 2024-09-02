@@ -1,0 +1,106 @@
+/* Signin */
+.main-content{
+    background: url('../images/bg.jpg');
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.form-section{
+    height: 100%;
+    place-items: center;
+}
+.form-section h2{
+    text-align: center !important;
+    color: #535185;
+    margin-bottom: 20px;
+}
+
+#login-form {
+    background-image: linear-gradient(to right bottom, #223469, #4f66a8);
+    width: 320px;
+    border: none;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 20px 2px#425aa1;
+    border-radius: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+#login-form h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#login-form label{
+    font-weight: 500;
+}
+#login-form input[type=text]{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#login-form input[type=email],
+#login-form input[type=password] {
+    background: #c4d8f0;
+    color: #333;
+    padding: 7px 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px auto;
+}
+#login-form input[type=email]:focus,
+#login-form input[type=email]:active,
+#login-form input[type=password]:focus,
+#login-form input[type=password]:active {
+    border: none;
+    box-shadow: none;
+}
+#login-form .button-part
+{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+#login-form .login-btn
+{
+    padding: 10px 40px;
+    font-weight: 500;
+    color: #ffffffbd;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #5d8abd, #345273);
+    border: 1px solid #ffffffe3;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+#login-form .login-btn:hover
+{
+    background: #274668;
+    color: #ffffffe3;
+    transition: ease-in 1s;
+}
+.form-section .bottom-part{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+.form-section .bottom-part a{
+    color: #fff;
+}
+.form-section .bottom-part a:hover{
+    text-decoration: none;
+    transition: ease-in .5s;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content{
+        min-height: 90vh;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .form-section h2
+    {
+        font-size: 1.3rem;
+    }
+    .main-content{
+        min-height: 85vh;
+    }
+}
