@@ -6,13 +6,11 @@
 <script>
 
     // alert close
-    // $(".alert").delay(10000).slideUp(500, function () {
-    //     $(this).alert('close');
-    // });
+    $(".alert").delay(7000).slideUp(500, function () {
+        $(this).alert('close');
+    });
 
     $('#myTable').DataTable();
-    $('#myTable2').DataTable();
     
-
 
 </script>

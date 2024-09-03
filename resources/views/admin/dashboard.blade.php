@@ -24,6 +24,8 @@
 
         </div>
 
+        @if(isset($users))
+
         <h3 class="text-center mt-5">User List</h3>
 
         <div class="container p-2 p-lg-5">
@@ -145,6 +147,9 @@
                 </table>
             </div>
         </div>
+        @else
+        <h3 class="text-center mt-5">Welcome to Admin Panel</h3>
+        @endif
         
     </div>
 </section>

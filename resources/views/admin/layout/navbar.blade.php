@@ -14,6 +14,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('adminLogout')}}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('dashboard')}}"><i class="fa-solid fa-circle-user"></i></i> @php echo Session::get('admin')->name @endphp </a>
+                </li>
                 @endif
             </ul>
         </div>

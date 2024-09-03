@@ -5,7 +5,7 @@
 <script>
 
     // alert close
-    $(".alert").delay(10000).slideUp(500, function () {
+    $(".alert").delay(7000).slideUp(500, function () {
         $(this).alert('close');
     });
     

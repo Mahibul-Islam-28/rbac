@@ -11,10 +11,39 @@ class UserManageController extends Controller
     // Dashboard
     function dashboard()
     {
-        $users = User::all();
+        $session = Session('admin');
+        $role = $session->role;
 
-        return view('admin.dashboard')
+        $users = User::all();
+        if($role == 'admin')
+        {
+            return view('admin.dashboard')
                 ->withUsers($users);
+        }
+        else
+        {
+            $permission = explode(", ", $session->permission);
+            if($permission)
+            {
+                foreach($permission as $p)
+                {
+                    if($p == 'View' || $p == 'All')
+                    {
+                        return view('admin.dashboard')
+                                ->withUsers($users);
+                    }
+                }
+
+                return view('admin.dashboard')
+                    ->with('error','You can not view user!');
+            }
+            else
+            {
+                return view('admin.dashboard')
+                ->with('error','You can not view user!');
+
+            }
+        }
     }
 
     // Create
@@ -288,8 +317,10 @@ class UserManageController extends Controller
             }
             else
             {
-                return back()
-                    ->with('error','No Permssion for set!');
+                $user->permission = '';
+                $user->update();
+                return redirect(route('dashboard'))
+                    ->with('success','Permission has been set!');
             }
             
         }

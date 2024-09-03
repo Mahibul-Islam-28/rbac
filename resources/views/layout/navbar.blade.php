@@ -20,6 +20,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('userLogout')}}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('index')}}"><i class="fa-solid fa-circle-user"></i></i> @php echo Session::get('user')->name @endphp </a>
+                </li>
                 @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('userLogin')}}"><i class="fa-solid fa-right-to-bracket"></i> Login</a>

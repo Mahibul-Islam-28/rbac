@@ -69,7 +69,7 @@
             </div>
 
             <div class="my-4">
-                <input type="submit" value="Update" class="btn btn-dark px-5">
+                <input type="submit" value="Create" class="btn btn-dark px-5">
             </div>
 
         </form>
